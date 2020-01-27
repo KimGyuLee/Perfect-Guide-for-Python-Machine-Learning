@@ -34,7 +34,11 @@
 # 3. Precision - 정밀도
 ![precision](https://user-images.githubusercontent.com/58073455/73165189-b04b8480-4136-11ea-883d-855a0ac1daa3.PNG)
 
-* 정밀도는 예측을 Positive로 한 대상(FP+TP) 중에, 예측과 실제 값이 Positive로 일치한 데이터(TP)의 비율을 뜻한다.
+* 정밀도는 예측을 Positive로 한 대상(FP+TP) 중에, 예측과 실제 값이 Positive로 일치한 데이터(TP)의 비율을 뜻한다.  
+
+* FP가 낮아야 정밀도가 올라간다. (Positive로 예측했으나 실제값은 Negative인 건수)  
+
+* 사이킷런에서 precision_score() 제공  
 
 
 # 4. Recall - 재현율
@@ -42,6 +46,11 @@
 
 * 재현율은 실제 값이 Positive인 대상(FN+TP) 중에, 예측과 실제 값이 Positive로 일치한 데이터(TP)의 비율을 뜻한다.
 
+* FN이 낮아야 재현율이 올라간다. (Negative로 예측했으나, 실제값은 Positive인 건수)
+
+* 사이킷런에서 recall_score() 제공  
+
+* 정밀도와 재현율 둘다 TP를 분자로 갖지만, 정밀도는 예측을 Positive로 한 대상을 분모로, 재현율은 실제값이 Positive인 대상을 분모로 한다는 차이가 있다.  
 
 
 # 5. F1 Score
