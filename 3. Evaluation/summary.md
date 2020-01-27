@@ -1,7 +1,7 @@
 # Evaluation - Classification 성능 평가 지표
 회귀보다는 분류, 특히 이진분류일 때 여러가지 성능 지표들을 다 고려해야 한다. 회귀는 성능 지표들이 실제값과 예측값이 얼마나 차이가 나는지에 대해 일관적으로 구성되어 있다. 0이냐 1이냐, 사망이냐 생존이냐, 양성이냐 음성이냐를 분류하는 이진분류는 다양한 성능지표를 고려하는데, 정확도는 이진 분류에서 잘 사용하지 않는다. 성능 지표들을 살펴보면, 오차행렬을 가지고 정밀도와 재현율을 도출하고, 정밀도와 재현율이 얼마나 균형잡혀있는지를 f1 score를 통해 확인한다. 특히 이진분류일 때, roc와 auc를 성능 지표로 많이 활용한다.  
 
-## 1. Accuracy - 정확도  
+# 1. Accuracy - 정확도  
 ![accuracy_formula](https://user-images.githubusercontent.com/58073455/73163518-804eb200-4133-11ea-9006-142a508372c4.PNG)
 
 * 정확도는 직관적으로 모델 예측 성능을 나타내는 평가 지표이다. 하지만 이진 분류의 경우 데이터의 구성에 따라 ML 모델의 성능을 왜곡할 수 있기 때문에 정확도 수치 하나만 가지고 성능을 평가하지 않는다.  
@@ -11,7 +11,7 @@
 * 예를 들어, 신용카드 사기검출을 위한 전체 데이터 개수가 10,000 건일 경우, 9,900 건은 '정상'이고 100 건, 즉 1% 만 '사기'라고 할 때, 모든 데이터를 '정상'으로 예측한다고 하더라도 정확도는 99% 가 나온다.  
 
 
-## 2. Confusion Matrix - 오차행렬  
+# 2. Confusion Matrix - 오차행렬  
 ![confusion_matrix](https://user-images.githubusercontent.com/58073455/73163888-2ef2f280-4134-11ea-8f08-89c49881521d.PNG)
 
 * 이진 분류의 예측 오류가 얼마인지와 더불어 어떠한 유형의 예측 오류가 발생하고 있는지를 함께 나타내는 지표이다.  
@@ -31,21 +31,21 @@
 * Positive로 예측 자체를 수행하지 않았음에도 불구하고, 레이블 값의 불균형으로 인하여 정확도가 90% 가 나온다.
 
 
-## 3. Precision - 정밀도
+# 3. Precision - 정밀도
 ![precision](https://user-images.githubusercontent.com/58073455/73165189-b04b8480-4136-11ea-883d-855a0ac1daa3.PNG)
 
 * 정밀도는 예측을 Positive로 한 대상(FP+TP) 중에, 예측과 실제 값이 Positive로 일치한 데이터(TP)의 비율을 뜻한다.
 
 
-## 4. Recall - 재현율
+# 4. Recall - 재현율
 ![recall](https://user-images.githubusercontent.com/58073455/73165300-e5f06d80-4136-11ea-801f-0eacbd3b3fa5.PNG)
 
 * 재현율은 실제 값이 Positive인 대상(FN+TP) 중에, 예측과 실제 값이 Positive로 일치한 데이터(TP)의 비율을 뜻한다.
 
 
 
-## 5. F1 Score
+# 5. F1 Score
 
 
-## 6. ROC Curve & AUC
+# 6. ROC Curve & AUC
 
