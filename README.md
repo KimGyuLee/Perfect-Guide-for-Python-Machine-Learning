@@ -1,11 +1,11 @@
 # Perfect-Guide-for-Python-Machine-Learning
 
-**2-1. [Numpy-Pandas]()**  
-**2-2. [Scikit-learn]()**  
-**2-3. [Evaluation]()**  
-**2-4. [Classification]()**  
-**2-5. [Regression]()**  
-**2-6. [Dimension-Reduction]()**  
-**2-7. [Clustering]()**  
-**2-8. [Text-mining]()**  
-**2-9. [Recommendation]()**  
+## 1. [Numpy-Pandas]()  
+## 2. [Scikit-learn]()  
+## 3. [Evaluation]()  
+## 4. [Classification]()  
+## 5. [Regression]()  
+## 6. [Dimension-Reduction]()  
+## 7. [Clustering]()  
+## 8. [Text-mining]()  
+## 9. [Recommendation]()  
