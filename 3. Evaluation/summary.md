@@ -16,16 +16,32 @@
 
 * 이진 분류의 예측 오류가 얼마인지와 더불어 어떠한 유형의 예측 오류가 발생하고 있는지를 함께 나타내는 지표이다.  
 
-* TN (True Negative) : 예측을 Negative로 했는데, 맞은 것 (True) - 실제는 Negative  
-* FN (False Negative) : 예측을 Negative로 했는데, 틀린 것 (False) - 실제는 Positive  
-* FP (False Positive) : 예측을 Positive로 했는데, 틀린 것 (False) - 실제는 Negative  
-* TP (True Positive) : 예측을 Positive로 했는데, 맞은 것 (True) - 실제는 Positive  
-  
+* **TN (True Negative)** : 예측을 Negative로 했는데, 맞은 것 (True) - 실제는 Negative  
+* **FN (False Negative)** : 예측을 Negative로 했는데, 틀린 것 (False) - 실제는 Positive  
+* **FP (False Positive)** : 예측을 Positive로 했는데, 틀린 것 (False) - 실제는 Negative  
+* **TP (True Positive)** : 예측을 Positive로 했는데, 맞은 것 (True) - 실제는 Positive  
+
+![confusion_matrix2](https://user-images.githubusercontent.com/58073455/73164834-0cfa6f80-4136-11ea-98e4-c74dd9c32217.PNG)
+
+* TP는 0이다. Positive로 예측한 것이 한 건도 성공하지 못했다.
+* 더불어 FP가 0이므로 Positive로 예측 자체를 수행하지 않았음을 알 수 있다.
+
+![accuracy_formula2](https://user-images.githubusercontent.com/58073455/73164948-4337ef00-4136-11ea-9b4f-9753f4043027.PNG)
+
+* Positive로 예측 자체를 수행하지 않았음에도 불구하고, 레이블 값의 불균형으로 인하여 정확도가 90% 가 나온다.
+
 
 ## 3. Precision - 정밀도
+![precision](https://user-images.githubusercontent.com/58073455/73165189-b04b8480-4136-11ea-883d-855a0ac1daa3.PNG)
+
+* 정밀도는 예측을 Positive로 한 대상(FP+TP) 중에, 예측과 실제 값이 Positive로 일치한 데이터(TP)의 비율을 뜻한다.
 
 
 ## 4. Recall - 재현율
+![recall](https://user-images.githubusercontent.com/58073455/73165300-e5f06d80-4136-11ea-801f-0eacbd3b3fa5.PNG)
+
+* 재현율은 실제 값이 Positive인 대상(FN+TP) 중에, 예측과 실제 값이 Positive로 일치한 데이터(TP)의 비율을 뜻한다.
+
 
 
 ## 5. F1 Score
