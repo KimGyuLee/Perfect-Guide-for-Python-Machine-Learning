@@ -88,6 +88,8 @@
 
 
 # 6. ROC Curve & AUC
+![roc](https://user-images.githubusercontent.com/58073455/73170994-0d4d3780-4143-11ea-8ddf-8ab7567e072c.PNG)
+
 * ROC 곡선과 이에 기반한 AUC 스코어는 이진 분류의 예측 성능 측정에서 중요하게 사용되는 지표이다. 일반적으로 의학 분야에서 많이 사용하지만 머신러닝의 이진 분류 모델의 예측 성능을 판단하는 중요한 평가 지표이기도 하다.
 
 * ROC 곡선은 FPR(False Positive Rate)이 변할 때 TPR(True Positive Rate)이 어떻게 변하는지를 나타내는 곡선이다.
@@ -96,8 +98,10 @@
 
 * 분류의 성능 지표로 사용되는 것은 ROC 곡선 면적에 기반한 AUC 값으로 결정한다. AUC 값은 ROC 곡선 밑의 면적을 구한 것으로서 일반적으로 1에 가까울수록 좋은 수치이다.
 
-* FPR
+* TPR(True Positive Rate)은 재현율을 나타내며, 민감도로도 불린다. (TPR = TP / FN + TP)
 
-* TPR
+* FPR(False Positive Rate)은 실제 Negative를 잘못 예측한 비율을 나타낸다. 즉, 실제는 Negative인데 Positive 또는 Negative로 예측한 것 중 Positive로 잘못 예측한 비율이다. (FPR = FP / FP + TN)
+
+
 
 
