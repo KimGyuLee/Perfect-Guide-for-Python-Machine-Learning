@@ -102,6 +102,5 @@
 
 * FPR(False Positive Rate)은 실제 Negative를 잘못 예측한 비율을 나타낸다. 즉, 실제는 Negative인데 Positive 또는 Negative로 예측한 것 중 Positive로 잘못 예측한 비율이다. (FPR = FP / FP + TN)
 
-
-
+![roc_auc](https://user-images.githubusercontent.com/58073455/73171214-8f3d6080-4143-11ea-8319-077e1db045e6.PNG)
 
