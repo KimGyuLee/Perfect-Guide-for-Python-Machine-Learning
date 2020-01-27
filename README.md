@@ -10,6 +10,7 @@
 ### 8. [Text-mining]()  
 ### 9. [Recommendation]()  
 
-* references
+
+references
 ----------------------
 https://github.com/chulminkw/PerfectGuide
