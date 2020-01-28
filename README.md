@@ -4,7 +4,7 @@
 ### 2. [Scikit-learn]()  
 ### 3. [Evaluation](https://github.com/KimGyuLee/Perfect-Guide-for-Python-Machine-Learning/blob/master/3.%20Evaluation/summary.md)  
 ### 4. [Classification]()  
-### 5. [Regression]()  
+### 5. [Regression](https://github.com/KimGyuLee/Perfect-Guide-for-Python-Machine-Learning/blob/master/5.%20Regression/summary.md)  
 ### 6. [Dimension-Reduction]()  
 ### 7. [Clustering]()  
 ### 8. [Text-mining]()  
