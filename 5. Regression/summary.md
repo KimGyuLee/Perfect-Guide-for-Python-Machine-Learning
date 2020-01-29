@@ -53,9 +53,17 @@ Classification은 Category 값 (이산값)을 결과값으로 반환하고, Regr
 ![평가지표](https://user-images.githubusercontent.com/58073455/73361650-b6816280-42e8-11ea-9c5e-d23264587d07.PNG)
 
 
-
-
 ## 3. Polynomial Regression - 다항 회귀  
+
+- 회귀식이 독립변수의 단항식이 아닌 2차, 3차 방정식과 같은 다항식으로 표현되는 것을 말한다.
+- 데이터 세트에서 피처 X에 대해 Y 값의 관계를 단순 선형 회귀 직선형으로 표현하는 것 보다 다항 회귀 곡선형으로 표현하는 것이 예측 성능이 더 높다.  
+
+EX.
+![다항회귀](https://user-images.githubusercontent.com/58073455/73363252-bf276800-42eb-11ea-91b6-d6bf2546ac8c.PNG)
+
+- 다항 회귀는 선형 회귀이다. 회귀에서 선형/비선형 회귀를 나누는 기준은 '회귀 계수'가 선형/비선형인지에 따른 것이지 '독립변수' X의 선형/비선형 여부와는 무관하다. (X의 제곱을 새로운 변수 Z로 정의하면 Z에 대한 일차식이 된다.)
+
+
 
 
 ## 4. Regularized Linear Regression - 규제 선형 회귀  
