@@ -41,11 +41,13 @@ Classification은 Category 값 (이산값)을 결과값으로 반환하고, Regr
 
 - w1, w0의 편미분 결과값을 반복적으로 보정하면서 w1, w0을 업데이트하면 비용함수 R(W)가 최소가 되는 w1, w0값을 구할 수 있다. 하지만 실제로는 위 편미분 값이 너무 클 수 있기 때문에 보정계수 ŋ를 곱하는데, 이를 학습률이라고 한다.
 
-![경사하강법2](https://user-images.githubusercontent.com/58073455/73341861-d866ef00-42c0-11ea-8811-4fba06f9ae53.PNG)
+![경사하강법2](https://user-images.githubusercontent.com/58073455/73341861-d866ef00-42c0-11ea-8811-4fba06f9ae53.PNG)  
+
 
 ## 2. Linear Regression - 선형 회귀  
 
-* **TN (True Negative)** : 예측을 Negative로 했는데, 맞은 것 (True) - 실제는 Negative  
+* 선형 회귀의 다중 공선성 문제
+  - 선형 회귀는 입력 피처의 독립성에 많은 영향을 받는다. 피처간의 상관관계가 높은 경우 분산이 커져서 오류에 민감해진다. 이러한 현상을 다중공선성(multi-collinearity) 문제라고 한다. 일반적으로 상관관계가 높은 피처가 많은 경우 독립적인 중요한 피처만 남기고 제거하거나 규제를 적용한다. 
 
 
 ## 3. Polynomial Regression - 다항 회귀  
