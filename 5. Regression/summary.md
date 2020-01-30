@@ -73,7 +73,7 @@ Classification은 Category 값 (이산값)을 결과값으로 반환하고, Regr
 
 
 ## 4. Regularized Linear Regression - 규제 선형 회귀  
-
+- 
 
 
 ## 5. Logistic Regression - 로지스틱 회귀
