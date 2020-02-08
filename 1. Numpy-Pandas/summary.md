@@ -41,10 +41,10 @@ titanic_df.drop([0, 1, 2], axis=0, inplce=True)
 ## 인덱스
 - 판다스의 index 객체는 RDBMS의 Primary Key와 유사하게 레코드를 고유하게 식별하는 객체이지만, RDBMS와는 다르게 컬럼명이 없고 연산도 불가능하다.
 - DataFrame.index : index 객체만 추출
-- reset_index() : 인덱스를 새롭게 연속 숫자 형으로 할당하고 기존 인덱스는 'index'라는 새로운 컬럼 명으로 추가
+- reset_index() : 인덱스를 새롭게 연속 숫자 형으로 할당하고 기존 인덱스는 'index'라는 새로운 컬럼 명으로 추가 (인덱스 자체가 의미있는 값을 가질 때, 인덱스로 새로운 컬럼을 만들기 위해서 사용)
 
 ~~~python
-
+titanic_reset_df = titanic_df.reset_index(inplace=False)
 ~~~
 
 
