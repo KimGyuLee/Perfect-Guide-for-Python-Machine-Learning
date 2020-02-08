@@ -9,7 +9,7 @@ array1 = np.array(list1)
 
 df_list1 = pd.DataFrame(list1, columns=col_name1)
 
-# 딕셔너리 형태로 바로 넣어도 된다.
+# 딕셔너리 형태로 바로 넣어도 된다. (DataFrame(dict))
 ~~~
 
 ## 데이터 삭제
@@ -29,6 +29,13 @@ titanic_df.drop('Age', axis=1, inplace=True)
 - 여러 개 컬럼 삭제
 ~~~python
 titanic_df.drop(['Age', 'Famliy_No'], axis=1, inplace=True)
+~~~
+
+- row 방향으로 삭제
+~~~python
+titanic_df.drop([0, 1, 2], axis=0, inplce=True)
+
+# index가 0, 1, 2인 row 삭제
 ~~~
 
 ## 인덱스
