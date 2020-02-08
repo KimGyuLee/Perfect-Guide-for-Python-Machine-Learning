@@ -8,6 +8,8 @@ list1 = [[1, 2, 3], [11. 12. 13]]
 array1 = np.array(list1)
 
 df_list1 = pd.DataFrame(list1, columns=col_name1)
+
+# 딕셔너리 형태로 바로 넣어도 된다.
 ~~~
 
 ## 데이터 삭제
@@ -22,6 +24,11 @@ df_list1 = pd.DataFrame(list1, columns=col_name1)
 ~~~python
 # 원본 데이터를 바꿈
 titanic_df.drop('Age', axis=1, inplace=True)
+~~~
+
+- 여러 개 컬럼 삭제
+~~~python
+titanic_df.drop(['Age', 'Famliy_No'], axis=1, inplace=True)
 ~~~
 
 ## 인덱스
