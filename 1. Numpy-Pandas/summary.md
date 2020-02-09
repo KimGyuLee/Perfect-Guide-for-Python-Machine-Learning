@@ -47,4 +47,18 @@ titanic_df.drop([0, 1, 2], axis=0, inplce=True)
 titanic_reset_df = titanic_df.reset_index(inplace=False)
 ~~~
 
+## 데이터 셀렉션 및 필터링
+- 명칭(label) 기반 인덱싱 : 컬럼의 명칭을 기반으로 위치를 지정하는 방식 (loc[])
+- 위치(Position) 기반 인덱싱 : 0을 출발점으로 하는 가로축, 세로축 좌표 기반의 행과 열 위치를 기반으로 데이터를 지정한다. 따라서 행, 열 위치값으로 정수가 입력된다. (iloc[])
+- ix[]는 명칭 기반과 위치 기반 인덱싱을 함께 제공한다.
+
+![인덱싱](https://user-images.githubusercontent.com/58073455/74100242-04f7f200-4b70-11ea-87ba-94ce11bf8ce2.PNG)
+
+
+
+
+
+
+
+
 
