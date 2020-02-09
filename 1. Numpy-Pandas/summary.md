@@ -54,6 +54,7 @@ titanic_reset_df = titanic_df.reset_index(inplace=False)
 
 ![인덱싱](https://user-images.githubusercontent.com/58073455/74100242-04f7f200-4b70-11ea-87ba-94ce11bf8ce2.PNG)
 
+- 행 위치와 인덱스 명칭이 같을 경우에는 ix[0,1]가 오류가 발생하지 않지만, 위의 그림과 같이 행 위치와 인덱스 명칭이 다를 경우 오류가 발생한다.  
 
 
 
