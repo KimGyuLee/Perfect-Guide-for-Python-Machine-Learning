@@ -57,10 +57,6 @@ titanic_reset_df = titanic_df.reset_index(inplace=False)
 - 행 위치와 인덱스 명칭(RangeIndex)이 같을 경우에는 ix[0,1]에 오류가 발생하지 않지만, 위의 그림과 같이 행 위치와 인덱스 명칭이 다를 경우 오류가 발생한다. ix[0,1]은 명칭과 위치 중 명칭부터 찾기 때문에 행에서 RangeIndex:0 이 없으므로 오류를 발생시키는 것이다.
 - 명칭 기반, 위치 기반 모두 헷갈리기 때문에 가능하면 불린 인덱싱을 사용하는 것이 좋다.
 
-~~~python
-titanic_boolean = titanic_df[titanic_df['Age']>60]
-~~~
-
 ## example
 ~~~ python
 titanic_df[['Survived', 'Pclass']]  # 여러 컬럼을 추출할 때에는 리스트 형태로 넣을 것
@@ -72,6 +68,27 @@ titanic_df.iloc[0,0]  # 위치 기반
 titanic_df.loc['one', 'Nmae']  # 명칭 기반
 ~~~
 
+~~~python
+titanic_boolean = titanic_df[titanic_df['Age']>60]  # 불린 인덱싱
+~~~
+
+~~~python
+titanic_df[titanic_df['Age']>60][['Name', 'Age']]
+# 'Age'>60 조건에 맞는 'Name', 'Age' 컬럼만 추출
+
+titanic_df[['Name', 'Age']][titanic_df['Age']>60]  # 위와 동일
+~~~
+
+~~~python
+titanic_df[ (titanic_df['Age']>60) & (titanic_df['Pclass']==1) & (titanic_df['Sex']=='female') ]
+~~~
+
+~~~python
+cond1 = titanic_df['Age'] > 60
+cond2 = titanic_df['Pclass']==1
+cond3 = titanic_df['Sex']=='female'
+titanic_df[ cond1 & cond2 & cond3]
+~~~
 
 
 
