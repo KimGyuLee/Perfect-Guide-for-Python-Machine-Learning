@@ -61,6 +61,19 @@ titanic_reset_df = titanic_df.reset_index(inplace=False)
 titanic_boolean = titanic_df[titanic_df['Age']>60]
 ~~~
 
+## example
+~~~ python
+titanic_df[['Survived', 'Pclass']]  # 여러 컬럼을 추출할 때에는 리스트 형태로 넣을 것
+~~~
+
+~~~python
+titanic_df.iloc[0,0]  # 위치 기반
+
+titanic_df.loc['one', 'Nmae']  # 명칭 기반
+~~~
+
+
+
 
 
 
