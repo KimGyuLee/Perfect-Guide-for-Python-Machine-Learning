@@ -87,15 +87,6 @@ titanic_df[ (titanic_df['Age']>60) & (titanic_df['Pclass']==1) & (titanic_df['Se
 cond1 = titanic_df['Age'] > 60
 cond2 = titanic_df['Pclass']==1
 cond3 = titanic_df['Sex']=='female'
-titanic_df[ cond1 & cond2 & cond3]
+titanic_df[cond1 & cond2 & cond3]
 ~~~
-
-
-
-
-
-
-
-
-
 
