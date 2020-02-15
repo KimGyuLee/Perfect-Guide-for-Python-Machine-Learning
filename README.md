@@ -7,7 +7,7 @@
 ### 5. [Regression](https://github.com/KimGyuLee/Perfect-Guide-for-Python-Machine-Learning/blob/master/5.%20Regression/summary.md)  
 ### 6. [Dimension-Reduction]()  
 ### 7. [Clustering]()  
-### 8. [Text-mining]()  
+### 8. [Text-mining](https://github.com/KimGyuLee/Perfect-Guide-for-Python-Machine-Learning/blob/master/8.%20Text-mining/summary.md)  
 ### 9. [Recommendation]()  
 
 
