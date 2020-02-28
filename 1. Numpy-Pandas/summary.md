@@ -98,4 +98,6 @@ titanic_df[cond1 & cond2 & cond3]
 titanic_df[['Age', 'Fare']].sum(asix=0) # 행축 방향으로 sum, 결론적으로는 column의 합계
 ~~~
 ~~~python
-titanic_df[['Age', 'Fare']].sum(axis=1) # 열축 방향으로 sum, 모든 row의 합계
+titanic_df[['Age', 'Fare']].sum(axis=1) # 열축 방향으로 sum, 해당 컬럼의 모든 row의 합계
+~~~
+
