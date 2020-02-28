@@ -127,6 +127,8 @@ def get_square(a):
 print('3의 제곱은:', get_square(3))
 ~~~
 
+![람다식](https://user-images.githubusercontent.com/58073455/75563695-1b69dd00-5a8e-11ea-93fe-d90938b8f21b.PNG)
+
 ~~~python
 # 람다식
 lambda_square = lambda x : x**2
