@@ -136,3 +136,8 @@ lambda_square = lambda x : x**2
 print('3의 제곱은:', lambda_square(3))
 ~~~
 
+- apply lambda 식으로 데이터 가공
+~~~python
+titanic_df['Name_len'] = titanic_df['Name'].apply(lambda x : len(x))
+# 'Name' 컬럼에 있는 인자들이 하나씩 x로 들어오면, len(x) 즉, x의 길이가 자동으로 리턴된다.
+~~~
