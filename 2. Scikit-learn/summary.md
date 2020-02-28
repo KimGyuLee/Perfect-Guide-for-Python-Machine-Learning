@@ -41,4 +41,3 @@ scaler = MinMaxScaler()
 scaler.fit(df)
 df_scaled = scaler.transform(df)
 ~~~
-scaler = 
