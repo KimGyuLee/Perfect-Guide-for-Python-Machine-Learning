@@ -11,4 +11,15 @@ encoder.fit(items)
 labels = encoder.transform(items)
 ~~~
 
+~~~python
+# 인코딩 클래스 확인
+encoder.classes_
+~~~
 
+
+### 원-핫 인코딩
+~~~python
+# 사이킷런의 원-핫 인코딩은 복잡(labelencoder -> 2차원 변환 -> 원-핫 인코딩)
+# pandas 함수를 사용하는 것이 쉽다.
+pd.get_dummies(DataFrame) 
+~~~
