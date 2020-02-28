@@ -100,4 +100,20 @@ titanic_df[['Age', 'Fare']].sum(asix=0) # 행축 방향으로 sum, 결론적으�
 ~~~python
 titanic_df[['Age', 'Fare']].sum(axis=1) # 열축 방향으로 sum, 해당 컬럼의 모든 row의 합계
 ~~~
+~~~python
+titanic_df.groupby('Pclass')['Age'].sum()
+~~~
+~~~python
+titanic_df.groupby('Pclass')['Age'].agg([max, min])  # 여러 함수를 적용하는 방법
+~~~
+~~~python
+# 컬럼별로 다른 함수를 적용하는 방법
+agg_format={'Age':'max', 'SibSp':'sum', 'Fare':'mean'}
+titanic_df.groupby('Pclass').agg(agg_format)
+~~~
 
+## Pivot
+~~~python
+pd.pivot_table(DataFrame, index='기준일자', columns='성별', values='이용금액')
+~~~
+![피벗](https://user-images.githubusercontent.com/58073455/75560738-13f40500-5a89-11ea-85bf-d7262fee3107.png)
