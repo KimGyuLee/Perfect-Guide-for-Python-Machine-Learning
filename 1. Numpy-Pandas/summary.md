@@ -141,3 +141,8 @@ print('3의 제곱은:', lambda_square(3))
 titanic_df['Name_len'] = titanic_df['Name'].apply(lambda x : len(x))
 # 'Name' 컬럼에 있는 인자들이 하나씩 x로 들어오면, len(x) 즉, x의 길이가 자동으로 리턴된다.
 ~~~
+
+~~~python
+titanic_df['Child_Adult'] = titanic_df['Age'].apply(lambda x : 'Child' if x <= 15 else 'Adult')
+# 'Age' 의 값이 15 이하이면 'Child'를 반환하고, 그 외에는 'Adult'를 반환한다.
+~~~
