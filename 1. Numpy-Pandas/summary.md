@@ -117,3 +117,20 @@ titanic_df.groupby('Pclass').agg(agg_format)
 pd.pivot_table(DataFrame, index='기준일자', columns='성별', values='이용금액')
 ~~~
 ![피벗](https://user-images.githubusercontent.com/58073455/75560738-13f40500-5a89-11ea-85bf-d7262fee3107.png)
+
+## lambda식
+~~~python
+# 일반함수
+def get_square(a):
+    return a**2
+
+print('3의 제곱은:', get_square(3))
+~~~
+
+~~~python
+# 람다식
+lambda_square = lambda x : x**2
+
+print('3의 제곱은:', lambda_square(3))
+~~~
+
