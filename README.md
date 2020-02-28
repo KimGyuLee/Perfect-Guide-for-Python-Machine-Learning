@@ -1,7 +1,7 @@
 # Perfect-Guide-for-Python-Machine-Learning
 
 ### 1. [Numpy-Pandas](https://github.com/KimGyuLee/Perfect-Guide-for-Python-Machine-Learning/blob/master/1.%20Numpy-Pandas/summary.md)  
-### 2. [Scikit-learn]()  
+### 2. [Scikit-learn](https://github.com/KimGyuLee/Perfect-Guide-for-Python-Machine-Learning/blob/master/2.%20Scikit-learn/summary.md)  
 ### 3. [Evaluation](https://github.com/KimGyuLee/Perfect-Guide-for-Python-Machine-Learning/blob/master/3.%20Evaluation/summary.md)  
 ### 4. [Classification]()  
 ### 5. [Regression](https://github.com/KimGyuLee/Perfect-Guide-for-Python-Machine-Learning/blob/master/5.%20Regression/summary.md)  
