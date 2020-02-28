@@ -143,6 +143,8 @@ titanic_df['Name_len'] = titanic_df['Name'].apply(lambda x : len(x))
 ~~~
 
 ~~~python
-titanic_df['Child_Adult'] = titanic_df['Age'].apply(lambda x : 'Child' if x <= 15 else ('Adult' if x <=60 else 'Elderly'))
-# 'Age' 의 값이 15 이하이면 'Child'를 반환하고, 나머지 중에서 60 이하이면 'Adult'를 반환하고, 그 외에는 'Elderly'를 반환한다.
+titanic_df['Child_Adult'] = titanic_df['Age'].apply(lambda x : 'Child' if x <= 15 
+else ('Adult' if x <=60 else 'Elderly'))
+# 'Age' 의 값이 15 이하이면 'Child'를 반환하고, 나머지 중에서 60 이하이면 'Adult'를 반환하고, 
+그 외에는 'Elderly'를 반환한다.
 ~~~
