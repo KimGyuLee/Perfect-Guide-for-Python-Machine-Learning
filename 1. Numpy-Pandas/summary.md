@@ -148,3 +148,18 @@ titanic_df['Child_Adult'] = titanic_df['Age'].apply(lambda x : 'Child' if x <= 1
 # 'Age' 의 값이 15 이하이면 'Child'를 반환하고, 나머지 중에서 60 이하이면 'Adult'를 반환하고, 
 # 그 외에는 'Elderly'를 반환한다.
 ~~~
+
+~~~python
+# 조건이 많은 경우
+def get_category(age):
+    cat = ''
+    if age <= 5 : cat = 'Baby'
+    elif age <= 12 : cat = 'Child'
+    elif age <= 18 : cat = 'Teenager'
+    elif age <= 35 : cat = 'Adult'
+    else : cat = 'Elderly'
+    
+    return cat
+
+titanic_df['Age_cat'] = titanic_df['Age'].apply(lambda x : get_category(x))
+~~~
