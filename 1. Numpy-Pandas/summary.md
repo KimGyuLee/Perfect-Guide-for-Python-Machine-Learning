@@ -90,3 +90,12 @@ cond3 = titanic_df['Sex']=='female'
 titanic_df[cond1 & cond2 & cond3]
 ~~~
 
+## Aggregation 함수 & Group by
+- Aggregation 함수 호출 시 axis 값을 명시하지 않으면 axis=0과 같은 결과를 출력한다.
+![aggregation](https://user-images.githubusercontent.com/58073455/75559082-2f114580-5a86-11ea-938c-622996d449a1.PNG)
+
+~~~python
+titanic_df[['Age', 'Fare']].sum(asix=0) # 행축 방향으로 sum, 결론적으로는 column의 합계
+~~~
+~~~python
+titanic_df[['Age', 'Fare']].sum(axis=1) # 열축 방향으로 sum, 모든 row의 합계
