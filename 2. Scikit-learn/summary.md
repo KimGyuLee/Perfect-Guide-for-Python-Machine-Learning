@@ -1,3 +1,8 @@
+## 사이킷런 주요 모듈
+![사이킷런 주요모듈](https://user-images.githubusercontent.com/58073455/75888504-d4edf700-5e6e-11ea-8023-e3bbebe2a836.PNG)
+
+
+
 ## 인코딩
 ### 레이블 인코딩
 ~~~python
