@@ -6,7 +6,9 @@
 ### 보팅 (Voting) & 배깅 (Bagging)
 - 보팅과 배깅은 여러 개의 분류기가 투표를 통해 최종 예측 결과를 결정하는 방식이다.
 - 보팅과 배깅의 다른 점은 보팅의 경우 일반적으로 서로 다른 알고리즘을 가진 분류기를 결합하는 것이고, 배깅의 경우 각각의 분류기가 모두 같은 유형의 알고리즘 기반이지만, 데이터 샘플링을 서로 다르게 가져가면서 학습을 수행해 보팅을 하는 것이다.
-- 보팅 ex. Linear Regression + K Nearest Neighbor + Support Vector Machine  -> 투표
-- 배깅 ex. Decision Tree + Decision Tree + Decision Tree -> 투표
+
+![보팅배깅](https://user-images.githubusercontent.com/58073455/75949393-6dc15880-5ee9-11ea-9e6e-de38c1720928.PNG)
+
+
 
 
